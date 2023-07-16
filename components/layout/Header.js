@@ -26,7 +26,7 @@ const Header = () => {
       <h1>
         <img src="/Logo/atultrp_logo_light-removebg.png" className='w-32' />
       </h1>
-      <ul className='flex space-x-8'>
+      <ul className='sm:flex space-x-8 hidden'>
         {navItemsFunc()}
       </ul>
     </nav>

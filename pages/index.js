@@ -1,8 +1,11 @@
+import HeroSection from "@/components/HeroSection";
+import Header from "@/components/layout/Header";
 
 export default function Home() {
   return (
-    <>
-      <div className="text-3xl">heya life</div>
-    </>
+    <div className='max-w-[800px] w-full'>
+      <Header />
+      <HeroSection />
+    </div>
   )
 }

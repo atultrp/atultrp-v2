@@ -9,6 +9,7 @@ const Header = () => {
       { name: 'Work', link: '#work' },
       { name: 'Contact', link: '#contact' },
     ]
+
     return navItems.map((item, index) => {
       return (
         <a href={item?.link} className='w-fit'>

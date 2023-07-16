@@ -1,4 +1,6 @@
+import About from "@/components/About";
 import HeroSection from "@/components/HeroSection";
+import TechStack from "@/components/TechStack";
 import Header from "@/components/layout/Header";
 
 export default function Home() {
@@ -6,6 +8,10 @@ export default function Home() {
     <div className='max-w-[900px] w-full mx-4'>
       <Header />
       <HeroSection />
+      <div id="about">
+        <About />
+        <TechStack />
+      </div>
     </div>
   )
 }

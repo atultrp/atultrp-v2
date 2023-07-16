@@ -1,16 +1,10 @@
+import { navItems } from '@/constant/data'
 import React from 'react'
 
 const Header = () => {
 
   const navItemsFunc = () => {
-    const navItems = [
-      { name: 'About', link: '#about' },
-      { name: 'Projects', link: '#projects' },
-      { name: 'Work', link: '#work' },
-      { name: 'Contact', link: '#contact' },
-    ]
-
-    return navItems.map((item, index) => {
+    return navItems()?.map((item, index) => {
       return (
         <a href={item?.link} className='w-fit'>
           <li key={index} className='text-gray-300 hover:text-white font-semibold'>

@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import HeroSection from "@/components/HeroSection";
+import Projects from "@/components/Projects";
 import TechStack from "@/components/TechStack";
 import Header from "@/components/layout/Header";
 
@@ -11,6 +12,9 @@ export default function Home() {
       <div id="about">
         <About />
         <TechStack />
+      </div>
+      <div id="projects">
+        <Projects />
       </div>
     </div>
   )

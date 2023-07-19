@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaFolder } from 'react-icons/fa'
 import { FiGithub } from 'react-icons/fi'
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
@@ -7,6 +7,29 @@ import { ProjectData } from '@/constant/data'
 const Projects = () => {
 
   const projects = ProjectData()
+  const [projectCardCount, setProjectCardCount] = useState(6)
+  const [viewMore, setViewMore] = useState(false)
+
+  useEffect(() => {
+    if (window.innerWidth < 1024) {
+      setProjectCardCount(4)
+    }
+  }, [])
+
+  const handleViewMore = () => {
+    setViewMore(!viewMore)
+    if (!viewMore) {
+      setProjectCardCount(12)
+    } else {
+      if (window.innerWidth < 1024) {
+        setProjectCardCount(4)
+      }
+      else {
+        setProjectCardCount(6)
+      }
+    }
+  }
+
 
   const ProjectCard = ({ index, title, description, techStack, github, live }) => {
     return (
@@ -44,7 +67,7 @@ const Projects = () => {
 
       {/* Project Cards */}
       <div className='flex flex-wrap lg:justify-normal justify-center'>
-        {projects?.map((project, index) => {
+        {projects?.slice(0, projectCardCount)?.map((project, index) => {
           return (
             <div className='my-3 lg:mr-5 sm:mr-3 mr-1 flex lg:justify-normal justify-center'>
               <ProjectCard
@@ -61,8 +84,11 @@ const Projects = () => {
       </div>
 
       <div className='flex justify-center my-4'>
-        <button className='bg-[#1a263d] px-4 py-2 rounded-lg text-gray-400 hover:text-white'>
-          View More
+        <button
+          className='bg-[#1a263d] px-4 py-2 rounded-lg text-gray-400 hover:text-white'
+          onClick={() => handleViewMore()}
+        >
+          {viewMore ? "View Less" : "View More"}
         </button>
       </div>
 

@@ -184,3 +184,94 @@ export const techStackData = () => {
   }
   return techStack
 }
+
+
+export const ProjectData = () => {
+  const projects = [
+    {
+      title: 'Short Bio',
+      description: 'This website features bios of diverse individuals, from actors to athletes.',
+      techStack: ['React', 'Next.js', 'Tailwind', 'JSON'],
+      github: null,
+      live: 'https://short-bio.vercel.app/',
+    },
+    {
+      title: 'World Ranking App',
+      description: 'Rank countries by population, name, area with detailed info and theme functionality.',
+      techStack: ['Next.js', 'Tailwind', 'API'],
+      github: "https://github.com/atultrp/World-Rank-App",
+      live: 'https://world-rank.atultrp.vercel.app/',
+    },
+    {
+      title: 'Blog Like Star',
+      description: 'A blogging website with clean, simple design and functionality.',
+      techStack: ['Next.js', 'Tailwind', 'React Form'],
+      github: "https://github.com/atultrp/blog-like-star",
+      live: 'https://blog-like-star.vercel.app/',
+    },
+    {
+      title: 'Bear Pro',
+      description: 'Easy Metamask wallet link, mint tokens in seconds.',
+      techStack: ['React', 'Web3', 'Ethers', 'Next.js', 'Tailwind'],
+      github: 'https://github.com/atultrp/BearPro',
+      live: 'https://bearpro.vercel.app/',
+    },
+    {
+      title: 'Coinstar',
+      description: 'Price of all cryptocurrency like bitcoin, ethereum, dogecoin and many more.',
+      techStack: ['React', 'Next.js', 'Tailwind'],
+      github: 'https://github.com/atultrp/CoinSta',
+      live: 'https://coin-star.vercel.app/',
+    },
+    {
+      title: 'Starbook Gallery',
+      description: 'You can upload your pictures collection & by clicking on images, you can view the full image in detail.',
+      techStack: ['React', 'React Reveal', 'Firebase'],
+      github: 'https://github.com/atultrp/Starbook-Gallery-App',
+      live: 'https://starbook-gallery-app.vercel.app/',
+    },
+    {
+      title: 'Star Notebook',
+      description: 'Ultimate word processing app for all your tasks.',
+      techStack: ['React', 'NodeJs', 'MongoDB', 'ExpressJs', 'JS', 'Bootstrap'],
+      github: 'https://github.com/atultrp/StarNoteBook',
+      live: null,
+    },
+    {
+      title: 'Star Blog',
+      description: 'Easy blogging platform to share your thoughts, daily life, and interests with the world.',
+      techStack: ['NodeJs', 'ExpressJs','Lodash', 'JS', 'EJS'],
+      github: 'https://github.com/atultrp/Star-Blog',
+      live: null,
+    },
+    {
+      title: 'NewsStar App',
+      description: 'NewsStar is a news app which can be used to grab quick daily news bites.',
+      techStack: ['React', 'React Router', 'API', 'Bootstrap'],
+      github: 'https://github.com/atultrp/NewsStar-App',
+      live: null,
+    },
+    {
+      title: 'Text Star',
+      description: 'TextStar is a word counter and a character counting utility which can be used to manipulate your text.',
+      techStack: ['React', 'CSS', 'React Router'],
+      github: 'https://github.com/atultrp/TextStar',
+      live: 'https://text-star.vercel.app/',
+    },
+    {
+      title: 'Random Quotes App',
+      description: 'Random Quotes App is a web application that displays random quotes.',
+      techStack: ['NextJS', 'Tailwind', 'API'],
+      github: 'https://github.com/atultrp/random-quotes-app',
+      live: 'https://random-quotes-app-atultrp.vercel.app/',
+    },
+    {
+      title: 'Hungman Game',
+      description: 'Hangman is a guessing game for two or more players.',
+      techStack: ['Python'],
+      github: 'https://github.com/atultrp/hangman-game',
+      live: null,
+    },
+  ]
+  return projects
+}

@@ -6,7 +6,7 @@ import Header from "@/components/layout/Header";
 
 export default function Home() {
   return (
-    <div className='max-w-[900px] w-full mx-4'>
+    <div className='max-w-[900px] w-full lg:mx-4 mx-6 sm:mx-8'>
       <Header />
       <HeroSection />
       <div id="about">

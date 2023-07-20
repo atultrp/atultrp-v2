@@ -17,9 +17,9 @@ const Header = () => {
 
 
   return (
-    <nav className='flex justify-between items-center'>
+    <nav className='flex justify-between items-center mt-2 sm:mt-8 sm:mb-8 mb-4'>
       <h1>
-        <img src="/Logo/atultrp_logo_light-removebg.png" className='w-32' />
+        <img src="/Logo/atultrp_logo_light-removebg_cropped.png" className='sm:w-32 w-24' />
       </h1>
       <ul className='sm:flex space-x-8 hidden'>
         {navItemsFunc()}

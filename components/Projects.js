@@ -3,6 +3,7 @@ import { FaFolder } from 'react-icons/fa'
 import { FiGithub } from 'react-icons/fi'
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
 import { ProjectData } from '@/constant/data'
+import { sectionHeading } from '@/shared/SharedComponents'
 
 const Projects = () => {
 
@@ -46,7 +47,7 @@ const Projects = () => {
           </div>
         </div>
         <div className='text-center mb-4'>
-          <h3 className='text-xl font-bold text-gray-200 mt-2'>{title}</h3>
+          <h3 className='text-lg sm:text-xl font-bold text-gray-200 mt-2'>{title}</h3>
           <p className='text-gray-400 mt-2 text-xs'>{description}</p>
         </div>
         <div className='flex justify-center flex-wrap'>
@@ -62,8 +63,7 @@ const Projects = () => {
 
   return (
     <div className='mt-20 mb-8'>
-      <h3 className='text-2xl font-semibold text-gray-300 italic'>I build real value</h3>
-      <h2 className='text-5xl font-bold text-white'>Projects</h2>
+      {sectionHeading("I build real value", "Projects")}
 
       {/* Project Cards */}
       <div className='flex flex-wrap lg:justify-normal justify-center'>

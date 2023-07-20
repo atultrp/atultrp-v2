@@ -1,17 +1,31 @@
+import { sectionHeading } from '@/shared/SharedComponents'
 import React from 'react'
 import { BsGithub, BsTwitter, BsLinkedin, BsInstagram } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import { TbPoint } from 'react-icons/tb'
+import { SiUpwork } from 'react-icons/si'
 
 const About = () => {
+
+  const SocialLinks = () => {
+    return (
+      <>
+        <a href="https://github.com/atultrp" className="hover:scale-150 duration-200"><BsGithub /></a>
+        <a href="https://www.upwork.com/freelancers/atultrp" className="hover:scale-150 duration-200"><SiUpwork /></a>
+        <a href="https://www.linkedin.com/in/atultrp-/" className="hover:scale-150 duration-200"><BsLinkedin /></a>
+        <a href="https://www.twitter.com/atultrp_" className="hover:scale-150 duration-200"><BsTwitter /></a>
+        <a href="https://www.instagram.com/atultrp" className="hover:scale-150 duration-200"><BsInstagram /></a>
+      </>
+    )
+  }
+
   return (
     <div className='mt-4 mb-8'>
-      <h3 className='text-2xl font-semibold text-gray-300 italic'>Who I am</h3>
-      <h2 className='text-5xl font-bold text-white'>About</h2>
+      {sectionHeading('Who I am', 'About')}
 
-      <div className="flex flex-col-reverse sm:flex-row sm:mt-6 items-center">
+      <div className="flex flex-col-reverse sm:flex-row sm:mt-6 sm:items-center">
         <div className="space-y-3 sm:w-3/5">
-          <h3 className="text-3xl font-medium custom-font">
+          <h3 className="text-xl sm:text-3xl font-medium custom-font">
             Hi, I &apos; m a Web Developer 🚀 from Bangalore, India.
           </h3>
           <p className="text-base sm:text-lg text-gray-200">
@@ -50,14 +64,16 @@ const About = () => {
             </ul>
           </div>
         </div>
-        <div className="mx-auto my-5 sm:w-2/5 ">
-          <img src="/Images/atultrp_photo_real.jpeg" alt="profile" className="w-56 rounded-lg border-8 border-gray-100 mx-auto" />
-          <p className="text-3xl text-center font-medium custom-font mt-2">Atul Tripathi</p>
-          <div className="flex justify-center space-x-4 text-2xl my-3">
-            <a href="https://github.com/atultrp" className="hover:scale-150 duration-200"><BsGithub /></a>
-            <a href="https://www.twitter.com/atultrp_" className="hover:scale-150 duration-200"><BsTwitter /></a>
-            <a href="https://www.linkedin.com/in/atultrp-/" className="hover:scale-150 duration-200"><BsLinkedin /></a>
-            <a href="https://www.instagram.com/atultrp" className="hover:scale-150 duration-200"><BsInstagram /></a>
+        <div className="sm:mx-auto my-5 sm:w-2/5 ">
+          <div className='flex items-center'>
+            <img src="/Images/atultrp_photo_real.jpeg" alt="profile" className="w-56 rounded-lg border-8 border-gray-100 sm:mx-auto" />
+            <div className="ml-6 space-x-6 text-2xl my-3 sm:hidden">
+              <SocialLinks />
+            </div>
+          </div>
+          <p className="text-2xl sm:text-3xl sm:text-center font-medium custom-font mt-2">Atul Tripathi</p>
+          <div className="sm:flex justify-center space-x-6 text-2xl my-3 hidden">
+            <SocialLinks />
           </div>
         </div>
       </div>

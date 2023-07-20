@@ -1,4 +1,5 @@
 import { techStackData } from '@/constant/data'
+import { sectionHeading } from '@/shared/SharedComponents'
 import React from 'react'
 
 const TechStack = () => {
@@ -7,7 +8,7 @@ const TechStack = () => {
 
   const TitleText = ({ title }) => {
     return (
-      <h3 className='text-xl font-bold text-gray-200 mt-4'>{title}</h3>
+      <h3 className='text-lg sm:text-xl font-bold text-gray-200 mt-4'>{title}</h3>
     )
   }
 
@@ -19,8 +20,7 @@ const TechStack = () => {
 
   return (
     <div className='mb-8 mt-20'>
-      <h3 className='text-2xl font-semibold text-gray-300 italic'>What I work with</h3>
-      <h2 className='text-5xl font-bold text-white'>Tech Stack</h2>
+      {sectionHeading('What I work with', 'Tech Stack')}
 
       <TitleText title='Languages' />
       <div className='flex flex-wrap'>

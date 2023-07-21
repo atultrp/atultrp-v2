@@ -240,7 +240,7 @@ export const ProjectData = () => {
     {
       title: 'Star Blog',
       description: 'Easy blogging platform to share your thoughts, daily life, and interests with the world.',
-      techStack: ['NodeJs', 'ExpressJs','Lodash', 'JS', 'EJS'],
+      techStack: ['NodeJs', 'ExpressJs', 'Lodash', 'JS', 'EJS'],
       github: 'https://github.com/atultrp/Star-Blog',
       live: null,
     },
@@ -274,4 +274,33 @@ export const ProjectData = () => {
     },
   ]
   return projects
+}
+
+
+export const WorkData = () => {
+  const work = [
+    {
+      position: 'Frontend Developer',
+      company: 'Riskcovry',
+      date: 'Jul 2022 - Present',
+      description: 'Working on React products.;Developing and implementing highly-responsive user interface components using React concepts.;Monitoring and improving front-end performance.;Documenting application changes and developing updates.',
+      url: 'https://riskcovry.com/',
+    },
+    {
+      position: 'Web Developer',
+      company: 'Freelancer',
+      date: 'Mar 2022 - Present',
+      description: 'Experience in React, Next.js, Tailwind, and Node.js.;Successful track record of delivering high-quality web development projects.;Strong relationships with satisfied clients built on trust and collaboration.;Commitment to staying up-to-date with the latest web development trends and technologies.',
+      url: 'https://www.upwork.com/freelancers/atultrp',
+    },
+    {
+      position: 'Frontend Developer Intern',
+      company: 'Riskcovry (Intern)',
+      date: 'Jan 2022 - Apr 2022',
+      description: 'A full stack insurance distribution platform.;Worked on React products.;Developed and implement reusable components.;Learnt many new things in React.',
+      url: 'https://riskcovry.com/',
+    },
+  ]
+
+  return work
 }

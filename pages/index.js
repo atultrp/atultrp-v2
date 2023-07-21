@@ -2,6 +2,7 @@ import About from "@/components/About";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
 import TechStack from "@/components/TechStack";
+import Work from "@/components/Work";
 import Header from "@/components/layout/Header";
 
 export default function Home() {
@@ -15,6 +16,9 @@ export default function Home() {
       </div>
       <div id="projects">
         <Projects />
+      </div>
+      <div id="work">
+        <Work />
       </div>
     </div>
   )

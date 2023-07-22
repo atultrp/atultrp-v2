@@ -1,7 +1,6 @@
 import { sectionHeading } from '@/shared/SharedComponents'
 import React from 'react'
 import { BsGithub, BsTwitter, BsLinkedin, BsInstagram } from 'react-icons/bs'
-import { MdEmail } from 'react-icons/md'
 import { TbPoint } from 'react-icons/tb'
 import { SiUpwork } from 'react-icons/si'
 

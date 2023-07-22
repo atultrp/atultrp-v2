@@ -1,8 +1,5 @@
 import { navItems } from '@/constant/data'
-import { useRouter } from 'next/router'
 import React, { useState } from 'react'
-import Link from 'next/link'
-import { HiArrowNarrowRight } from 'react-icons/hi'
 
 
 const Header = () => {

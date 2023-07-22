@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
 import TechStack from "@/components/TechStack";
@@ -19,6 +20,9 @@ export default function Home() {
       </div>
       <div id="work" className='pt-12 pb-8'>
         <Work />
+      </div>
+      <div id="contact" className='pt-12 pb-8'>
+        <Contact />
       </div>
     </div>
   )

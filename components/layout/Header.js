@@ -17,7 +17,7 @@ const Header = () => {
 
 
   return (
-    <nav className='flex justify-between items-center mt-2 sm:mt-8 sm:mb-8 mb-4'>
+    <nav className='flex justify-between items-center mt-6 sm:mt-8 sm:mb-8 mb-0'>
       <h1>
         <img src="/Logo/atultrp_logo_light-removebg_cropped.png" className='sm:w-32 w-24' />
       </h1>

@@ -36,7 +36,7 @@ const Work = () => {
             return (
               <div key={index} className='my-2 flex space-x-2'>
                 <span className='w-5 h-5'>
-                  <FaFeatherPointed className='mt-[2px] text-green-500' />
+                  <FaFeatherPointed className='mt-1 text-green-500' />
                 </span>
                 <span>
                   {item}

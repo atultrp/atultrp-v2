@@ -18,7 +18,7 @@ const Work = () => {
   const CompanyDetails = ({ company, description, active, position, date, url }) => {
     return (
       <div className={`${active !== company && "hidden"}`}>
-        <div className='flex justify-between'>
+        <div className='flex justify-between mb-4'>
           <div>
             <h3 className='text-xl font-semibold'>
               {position}
@@ -35,7 +35,9 @@ const Work = () => {
           {description?.split(';')?.map((item, index) => {
             return (
               <div key={index} className='my-2 flex space-x-2'>
-                <FaFeatherPointed className='mt-[2px] text-green-500' />
+                <span className='w-5 h-5'>
+                  <FaFeatherPointed className='mt-[2px] text-green-500' />
+                </span>
                 <span>
                   {item}
                 </span>
@@ -56,17 +58,15 @@ const Work = () => {
       {sectionHeading('Where I', 'Work')}
 
       <div className='my-5 sm:flex sm:space-x-5'>
-        <div className='w-fit space-y-2'>
+        <div className='w-full sm:w-fit space-y-2'>
           {work?.map((item, index) => (
             <CompanyCard company={item?.company} active={activeTab} key={index} />
           ))}
         </div>
-        <div className='w-full'>
+        <div className='w-full mt-4 sm:mt-0'>
           {work?.map((item, index) => (
             <CompanyDetails company={item?.company} description={item?.description} position={item?.position} date={item?.date} url={item?.url} active={activeTab} key={index} />
           ))}
-          {/* <CompanyDetails company={'Riskcovry'} description={'This is the riskcovry data'} active={activeTab} />
-          <CompanyDetails company={'Riskcovry (Intern)'} description={'This is the riskcovry data'} active={activeTab} /> */}
         </div>
       </div>
     </div>

@@ -1,9 +1,11 @@
 import { navItems } from '@/constant/data'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 
 
 const Header = () => {
   const [open, setOpen] = useState(false)
+  const [showScroll, setShowScroll] = useState(false)
 
   const navItemsFunc = (setOpen) => {
     return navItems()?.map((item, index) => {
@@ -35,6 +37,20 @@ const Header = () => {
     )
   }
 
+  // Scroll To Top
+  const checkScrollTop = () => {
+    if (!showScroll && window.scrollY > 400) {
+      setShowScroll(true)
+    } else if (showScroll && window.scrollY <= 400) {
+      setShowScroll(false)
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', checkScrollTop)
+    return () => window.removeEventListener('scroll', checkScrollTop)
+  }, [showScroll])
+
 
   return (
     <nav className='flex justify-between items-center mt-6 sm:mt-8 sm:mb-8 mb-0'>
@@ -54,6 +70,17 @@ const Header = () => {
         <span className={`h-1 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-1.5 " : ""}`} />
       </div>
       <MobileNav open={open} setOpen={setOpen} />
+      {showScroll && <div
+        className='fixed bottom-4 right-4 sm:bottom-5 sm:right-5 text-3xl sm:text-4xl cursor-pointer hover:scale-125 scroll-smooth ease-in-out duration-200 '
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }}
+      >
+        <BsFillArrowUpCircleFill />
+      </div>}
     </nav>
   )
 }

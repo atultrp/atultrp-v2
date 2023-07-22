@@ -62,7 +62,7 @@ const Projects = () => {
   }
 
   return (
-    <div className='mt-20 mb-8'>
+    <div>
       {sectionHeading("I build real value", "Projects")}
 
       {/* Project Cards */}

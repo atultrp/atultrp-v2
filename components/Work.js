@@ -54,7 +54,7 @@ const Work = () => {
   }
 
   return (
-    <div className='mt-20 mb-8'>
+    <div>
       {sectionHeading('Where I', 'Work')}
 
       <div className='my-5 sm:flex sm:space-x-5'>

@@ -20,7 +20,7 @@ const About = () => {
   }
 
   return (
-    <div className='mt-4 mb-8'>
+    <div>
       {sectionHeading('Who I am', 'About')}
 
       <div className="flex flex-col-reverse sm:flex-row sm:mt-6 sm:items-center">

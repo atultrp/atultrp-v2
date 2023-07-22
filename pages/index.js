@@ -10,14 +10,14 @@ export default function Home() {
     <div className='max-w-[900px] w-full lg:mx-4 mx-6 sm:mx-8'>
       <Header />
       <HeroSection />
-      <div id="about">
+      <div id="about" className='pt-12 pb-8'>
         <About />
         <TechStack />
       </div>
-      <div id="projects">
+      <div id="projects" className='pt-12 pb-8'>
         <Projects />
       </div>
-      <div id="work">
+      <div id="work" className='pt-12 pb-8'>
         <Work />
       </div>
     </div>

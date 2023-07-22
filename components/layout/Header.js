@@ -7,10 +7,22 @@ const Header = () => {
   const [open, setOpen] = useState(false)
   const [showScroll, setShowScroll] = useState(false)
 
+  // Scroll Smooth Function for Nav Items
+  const scrollNavItemSmooth = (e, id) => {
+    e.preventDefault()
+    console.log(id, document.querySelector(id))
+    document.querySelector(id)?.scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
+
   const navItemsFunc = (setOpen) => {
     return navItems()?.map((item, index) => {
       return (
-        <a href={item?.link} className='w-fit' onClick={() => setOpen(false)}>
+        <a href={item?.link} className='w-fit scroll-smooth' onClick={(e) => {
+          setOpen(false)
+          scrollNavItemSmooth(e, item?.link)
+        }}>
           <div key={index} className='text-gray-300 hover:text-white font-semibold'>
             {item?.name}
           </div>
@@ -63,7 +75,7 @@ const Header = () => {
 
       {/* mobile nav */}
       {/* hamburger button */}
-      <div className="z-50 flex relative w-8 h-8 flex-col justify-center space-y-2 items-center lg:hidden" onClick={() => {
+      <div className="z-50 flex relative w-8 h-8 flex-col justify-center space-y-2 items-center sm:hidden" onClick={() => {
         setOpen(!open)
       }}>
         <span className={`h-1 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-1.5 " : ""}`} />

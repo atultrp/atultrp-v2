@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
+import Services from "@/components/Services";
 import TechStack from "@/components/TechStack";
 import Work from "@/components/Work";
 import Header from "@/components/layout/Header";
@@ -14,6 +15,9 @@ export default function Home() {
       <div id="about" className='pt-12 pb-8'>
         <About />
         <TechStack />
+      </div>
+      <div id="services" className='pt-12 pb-8'>
+        <Services />
       </div>
       <div id="projects" className='pt-12 pb-8'>
         <Projects />

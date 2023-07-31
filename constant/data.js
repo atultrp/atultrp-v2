@@ -1,6 +1,7 @@
 export const navItems = () => {
   return [
     { name: 'About', link: '#about' },
+    { name: 'Services', link: '#services' },
     { name: 'Projects', link: '#projects' },
     { name: 'Work', link: '#work' },
     { name: 'Contact', link: '#contact' },

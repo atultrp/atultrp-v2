@@ -4,6 +4,7 @@ import { FiGithub } from 'react-icons/fi'
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
 import { ProjectData } from '@/constant/data'
 import { sectionHeading } from '@/shared/SharedComponents'
+import { Fade } from 'react-awesome-reveal'
 
 const Projects = () => {
 
@@ -70,14 +71,16 @@ const Projects = () => {
         {projects?.slice(0, projectCardCount)?.map((project, index) => {
           return (
             <div className='my-3 lg:mr-5 sm:mr-3 mr-1 flex lg:justify-normal justify-center'>
-              <ProjectCard
-                index={index}
-                title={project?.title}
-                description={project?.description}
-                techStack={project?.techStack}
-                github={project?.github}
-                live={project?.live}
-              />
+              <Fade cascade duration={1500} triggerOnce>
+                <ProjectCard
+                  index={index}
+                  title={project?.title}
+                  description={project?.description}
+                  techStack={project?.techStack}
+                  github={project?.github}
+                  live={project?.live}
+                />
+              </Fade>
             </div>
           )
         })}

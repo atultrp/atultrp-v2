@@ -305,3 +305,33 @@ export const WorkData = () => {
 
   return work
 }
+
+
+export const ServicesData = () => {
+  return [
+    {
+      title: 'Custom Website Design',
+      content: 'Visually engaging websites reflecting your brand and user-focused experience.'
+    },
+    {
+      title: 'Responsive Development',
+      content: 'Websites that adapt seamlessly to all devices for optimal user experience.'
+    },
+    {
+      title: 'Cutting-edge Tech',
+      content: 'Dynamic websites with ReactJS, Next.js & modern front-end tools.'
+    },
+    {
+      title: 'Performance Optimization',
+      content: 'Lightning-fast performance optimized websites for quick loading and user engagement.'
+    },
+    {
+      title: 'SEO-friendly Development',
+      content: ' Boost online visibility with search engine friendly websites.'
+    },
+    {
+      title: 'Ongoing Support',
+      content: 'Ensure optimal website performance beyond deployment.'
+    },
+  ]
+}

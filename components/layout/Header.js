@@ -6,20 +6,20 @@ import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 const Header = () => {
   const [open, setOpen] = useState(false)
   const [showScroll, setShowScroll] = useState(false)
+  const navItemsData = navItems()
 
   // Scroll Smooth Function for Nav Items
   const scrollNavItemSmooth = (e, id) => {
     e.preventDefault()
-    console.log(id, document.querySelector(id))
     document.querySelector(id)?.scrollIntoView({
       behavior: 'smooth'
     })
   }
 
   const navItemsFunc = (setOpen) => {
-    return navItems()?.map((item, index) => {
+    return navItemsData?.map((item, index) => {
       return (
-        <a href={item?.link} className='w-fit scroll-smooth' onClick={(e) => {
+        <a key={index} href={item?.link} className='w-fit scroll-smooth' onClick={(e) => {
           setOpen(false)
           scrollNavItemSmooth(e, item?.link)
         }}>
@@ -62,6 +62,16 @@ const Header = () => {
     window.addEventListener('scroll', checkScrollTop)
     return () => window.removeEventListener('scroll', checkScrollTop)
   }, [showScroll])
+
+  // Disables Background Scrolling whilst the SideDrawer/Modal is open
+  useEffect(() => {
+    if (typeof window != 'undefined' && window.document && open) {
+      document.body.style.overflow = 'hidden'; // Prevent scrolling on mount
+    }
+    else {
+      document.body.style.overflow = 'unset'; // Allow scrolling on mount
+    }
+  }, [open])
 
 
   return (

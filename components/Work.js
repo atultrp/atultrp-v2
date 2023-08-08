@@ -7,9 +7,9 @@ const Work = () => {
   const [activeTab, setActiveTab] = useState('Riskcovry')
   const work = WorkData()
 
-  const CompanyCard = ({ company, active, key }) => {
+  const CompanyCard = ({ company, active }) => {
     return (
-      <div key={key} className={`${active === company ? 'bg-[#1a263d] text-white' : "text-gray-300"} hover:bg-[#1a263d] hover:text-white duration-300 py-2 px-4 cursor-pointer rounded-lg whitespace-nowrap`} onClick={() => handleClickCompanyCard(company)}>
+      <div key={company} className={`${active === company ? 'bg-[#1a263d] text-white' : "text-gray-300"} hover:bg-[#1a263d] hover:text-white duration-300 py-2 px-4 cursor-pointer rounded-lg whitespace-nowrap`} onClick={() => handleClickCompanyCard(company)}>
         {company}
       </div>
     )

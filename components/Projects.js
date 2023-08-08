@@ -70,10 +70,9 @@ const Projects = () => {
       <div className='flex flex-wrap lg:justify-normal justify-center'>
         {projects?.slice(0, projectCardCount)?.map((project, index) => {
           return (
-            <div className='my-3 lg:mr-5 sm:mr-3 mr-1 flex lg:justify-normal justify-center'>
+            <div className='my-3 lg:mr-5 sm:mr-3 mr-1 flex lg:justify-normal justify-center' key={index}>
               <Fade cascade duration={1500} triggerOnce>
                 <ProjectCard
-                  index={index}
                   title={project?.title}
                   description={project?.description}
                   techStack={project?.techStack}

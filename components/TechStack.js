@@ -4,7 +4,6 @@ import React from 'react'
 
 const TechStack = () => {
   const techStack = techStackData()
-  console.log(techStack)
 
   const TitleText = ({ title }) => {
     return (

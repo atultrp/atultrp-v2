@@ -33,9 +33,9 @@ const Services = () => {
         <h3 className='text-xl font-semibold mt-2'>What I Offer</h3>
         <div className='flex flex-wrap lg:justify-normal justify-center'>
           {servicesData?.slice(0, serviceCardCount)?.map((item, index) => (
-            <div className='my-3 lg:mr-5 sm:mr-3 mr-1 flex lg:justify-normal justify-center'>
+            <div key={index} className='my-3 lg:mr-5 sm:mr-3 mr-1 flex lg:justify-normal justify-center'>
               <Fade cascade duration={1500} triggerOnce>
-                <ServiceCard key={index} title={item.title} content={item.content} />
+                <ServiceCard title={item.title} content={item.content} />
               </Fade>
             </div>
           ))}

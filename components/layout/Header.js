@@ -1,4 +1,5 @@
 import { navItems } from '@/constant/data'
+import { scrollNavItemSmooth } from '@/shared/ShareFunction'
 import React, { useEffect, useState } from 'react'
 import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 
@@ -7,14 +8,6 @@ const Header = () => {
   const [open, setOpen] = useState(false)
   const [showScroll, setShowScroll] = useState(false)
   const navItemsData = navItems()
-
-  // Scroll Smooth Function for Nav Items
-  const scrollNavItemSmooth = (e, id) => {
-    e.preventDefault()
-    document.querySelector(id)?.scrollIntoView({
-      behavior: 'smooth'
-    })
-  }
 
   const navItemsFunc = (setOpen) => {
     return navItemsData?.map((item, index) => {

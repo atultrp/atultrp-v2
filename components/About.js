@@ -3,6 +3,9 @@ import React from 'react'
 import { BsGithub, BsTwitter, BsLinkedin, BsInstagram } from 'react-icons/bs'
 import { TbPoint } from 'react-icons/tb'
 import { SiUpwork } from 'react-icons/si'
+import { HiDocumentText } from 'react-icons/hi'
+import { scrollNavItemSmooth } from '@/shared/ShareFunction'
+import { BiCodeAlt } from 'react-icons/bi'
 
 const About = () => {
 
@@ -71,6 +74,20 @@ const About = () => {
             </div>
           </div>
           <p className="text-2xl sm:text-3xl sm:text-center font-medium custom-font mt-2">Atul Tripathi</p>
+          <div className='w-fit mt-2 flex space-x-3 sm:mx-auto sm:mb-4'>
+            <a href="/Atul Profile Resume.pdf" target="_blank">
+              <button className='px-3 py-2 bg-white text-[#0F1624] font-bold rounded-md flex items-center space-x-1 duration-300 ease-in-out hover:scale-110'>
+                <HiDocumentText className='text-xl' />
+                <span>Resume</span>
+              </button>
+            </a>
+            <a href="#contact" onClick={(e) => { scrollNavItemSmooth(e, "#contact") }}>
+              <button className='px-3 py-2 bg-white text-[#0F1624] font-bold rounded-md flex items-center space-x-1 duration-300 ease-in-out hover:scale-110'>
+                <BiCodeAlt className='text-xl' />
+                <span>Hire Me</span>
+              </button>
+            </a>
+          </div>
           <div className="sm:flex justify-center space-x-6 text-2xl my-3 hidden">
             <SocialLinks />
           </div>

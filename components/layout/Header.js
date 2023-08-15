@@ -86,7 +86,7 @@ const Header = () => {
       </div>
       <MobileNav open={open} setOpen={setOpen} />
       {showScroll && <div
-        className='fixed bottom-4 right-4 sm:bottom-5 sm:right-5 text-3xl sm:text-4xl cursor-pointer hover:scale-125 scroll-smooth ease-in-out duration-200 '
+        className='z-50 fixed bottom-4 right-4 sm:bottom-5 sm:right-5 text-3xl sm:text-4xl cursor-pointer hover:scale-125 scroll-smooth ease-in-out duration-200 '
         onClick={() => {
           window.scrollTo({
             top: 0,

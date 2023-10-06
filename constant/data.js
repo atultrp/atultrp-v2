@@ -206,7 +206,7 @@ export const ProjectData = () => {
     {
       title: 'Blog Like Star',
       description: 'A blogging website with clean, simple design and functionality.',
-      techStack: ['Next.js', 'Tailwind', 'React Form'],
+      techStack: ['Next.js', 'Tailwind', 'React Form', 'Firebase'],
       github: "https://github.com/atultrp/blog-like-star",
       live: 'https://blog-like-star.vercel.app/',
     },

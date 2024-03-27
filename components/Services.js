@@ -35,7 +35,7 @@ const Services = () => {
           {servicesData?.slice(0, serviceCardCount)?.map((item, index) => (
             <div key={index} className='my-3 lg:mr-5 sm:mr-3 mr-1 flex lg:justify-normal justify-center'>
               <Fade cascade duration={1500} triggerOnce>
-                <ServiceCard title={item.title} content={item.content} />
+                <ServiceCard title={item.title} content={item.content} imgSrc={item.imgSrc} />
               </Fade>
             </div>
           ))}

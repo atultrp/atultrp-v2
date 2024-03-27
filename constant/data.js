@@ -315,27 +315,33 @@ export const ServicesData = () => {
   return [
     {
       title: 'Custom Website Design',
-      content: 'Visually engaging websites reflecting your brand and user-focused experience.'
+      content: 'Visually engaging websites reflecting your brand and user-focused experience.',
+      imgSrc: 'Images/customWeb.svg'
     },
     {
       title: 'Responsive Development',
-      content: 'Websites that adapt seamlessly to all devices for optimal user experience.'
+      content: 'Websites that adapt seamlessly to all devices for optimal user experience.',
+      imgSrc: 'Images/responsive.svg'
     },
     {
       title: 'Cutting-edge Tech',
-      content: 'Dynamic websites with ReactJS, Next.js & modern front-end tools.'
+      content: 'Dynamic websites with ReactJS, Next.js & modern front-end tools.',
+      imgSrc: 'Images/cuttingEdge.jpg'
     },
     {
       title: 'Performance Optimization',
-      content: 'Lightning-fast performance optimized websites for quick loading and user engagement.'
+      content: 'Lightning-fast performance optimized websites for quick loading and user engagement.',
+      imgSrc: 'Images/performance.svg'
     },
     {
       title: 'SEO-friendly Development',
-      content: ' Boost online visibility with search engine friendly websites.'
+      content: ' Boost online visibility with search engine friendly websites.',
+      imgSrc: 'Images/seo.svg'
     },
     {
       title: 'Ongoing Support',
-      content: 'Ensure optimal website performance beyond deployment.'
+      content: 'Ensure optimal website performance beyond deployment.',
+      imgSrc: 'Images/support.svg'
     },
   ]
 }

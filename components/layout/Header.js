@@ -1,5 +1,6 @@
 import { navItems } from '@/constant/data'
 import { scrollNavItemSmooth } from '@/shared/ShareFunction'
+import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 
@@ -8,6 +9,9 @@ const Header = () => {
   const [open, setOpen] = useState(false)
   const [showScroll, setShowScroll] = useState(false)
   const navItemsData = navItems()
+  const router = useRouter()
+
+  console.log("heya", router)
 
   const navItemsFunc = (setOpen) => {
     return navItemsData?.map((item, index) => {

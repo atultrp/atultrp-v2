@@ -10,7 +10,6 @@ const Header = () => {
   const [showScroll, setShowScroll] = useState(false)
   const navItemsData = navItems()
   const router = useRouter()
-
   console.log("heya", router)
 
   const navItemsFunc = (setOpen) => {

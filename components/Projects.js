@@ -2,15 +2,18 @@ import React, { useEffect, useState } from 'react'
 import { FaFolder } from 'react-icons/fa'
 import { FiGithub } from 'react-icons/fi'
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
-import { ProjectData } from '@/constant/data'
+import { FreelanceProjectData, ProjectData } from '@/constant/data'
 import { sectionHeading } from '@/shared/SharedComponents'
 import { Fade } from 'react-awesome-reveal'
+import { FaDiagramProject } from "react-icons/fa6";
 
 const Projects = () => {
 
   const projects = ProjectData()
   const [projectCardCount, setProjectCardCount] = useState(6)
+  const [projectCardCountFreelance, setProjectCardCountFreelance] = useState(6)
   const [viewMore, setViewMore] = useState(false)
+  const [viewMoreFreelance, setViewMoreFreelance] = useState(false)
 
   useEffect(() => {
     if (window.innerWidth < 1024) {
@@ -28,6 +31,19 @@ const Projects = () => {
       }
       else {
         setProjectCardCount(6)
+      }
+    }
+  }
+  const handleViewMoreFreelance = () => {
+    setViewMoreFreelance(!viewMoreFreelance)
+    if (!viewMoreFreelance) {
+      setProjectCardCountFreelance(12)
+    } else {
+      if (window.innerWidth < 1024) {
+        setProjectCardCountFreelance(4)
+      }
+      else {
+        setProjectCardCountFreelance(6)
       }
     }
   }
@@ -66,7 +82,12 @@ const Projects = () => {
     <div>
       {sectionHeading("I build real value", "Projects")}
 
-      {/* Project Cards */}
+      {/* Persoal Projects*/}
+
+      <h3 className='text-xl font-semibold mt-6 mb-2 flex items-center space-x-3'>
+        <FaDiagramProject />
+        <span>Personal Projects</span>
+      </h3>
       <div className='flex flex-wrap lg:justify-normal justify-center'>
         {projects?.slice(0, projectCardCount)?.map((project, index) => {
           return (
@@ -91,6 +112,39 @@ const Projects = () => {
           onClick={() => handleViewMore()}
         >
           {viewMore ? "View Less" : "View More"}
+        </button>
+      </div>
+
+      {/* Freelance Projects*/}
+
+      <h3 className='text-xl font-semibold mt-6 mb-2 flex items-center space-x-3'>
+        <FaDiagramProject />
+        <span>Freelance Projects</span>
+      </h3>
+      <div className='flex flex-wrap lg:justify-normal justify-center'>
+        {FreelanceProjectData?.slice(0, projectCardCountFreelance)?.map((project, index) => {
+          return (
+            <div className='my-3 lg:mr-5 sm:mr-3 mr-1 flex lg:justify-normal justify-center' key={index}>
+              <Fade cascade duration={1500} triggerOnce>
+                <ProjectCard
+                  title={project?.title}
+                  description={project?.description}
+                  techStack={project?.techStack}
+                  github={project?.github}
+                  live={project?.live}
+                />
+              </Fade>
+            </div>
+          )
+        })}
+      </div>
+
+      <div className='flex justify-center my-4'>
+        <button
+          className='bg-[#1a263d] px-4 py-2 rounded-lg text-gray-400 hover:text-white'
+          onClick={() => handleViewMoreFreelance()}
+        >
+          {viewMoreFreelance ? "View Less" : "View More"}
         </button>
       </div>
 

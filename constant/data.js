@@ -281,6 +281,65 @@ export const ProjectData = () => {
   return projects
 }
 
+export const FreelanceProjectData = [
+  {
+    title: 'TheeClub',
+    description: 'A platform for cryptocurrency enthusiasts to gain rewards through token staking and buy CRT tokens',
+    techStack: ['React', 'Web3', 'Ethers', 'Next.js', 'Tailwind'],
+    github: null,
+    live: 'https://theeclub.vercel.app/',
+  },
+  {
+    title: 'Futuristic Coin',
+    description: 'A platform for purchasing FTC tokens with BNB and USDT.',
+    techStack: ['React', 'Web3', 'Ethers', 'Next.js', 'Tailwind'],
+    github: null,
+    live: 'https://futuristic-coin.vercel.app/',
+  },
+  {
+    title: 'Future Farming',
+    description: 'Future Farming is a simple user interface website.',
+    techStack: ['React', 'Next.js', 'Tailwind'],
+    github: null,
+    live: 'https://futurefarming-clone.vercel.app',
+  },
+  {
+    title: 'MDTX',
+    description: 'Mint your token in seconds with MDTX',
+    techStack: ['React', 'Web3', 'Ethers', 'Next.js', 'Tailwind'],
+    github: null,
+    live: 'https://client-pro-1.vercel.app/',
+  },
+  {
+    title: 'Aya Stellar',
+    description: 'Aya Stellar is a straightforward website that features a roadmap for NFT utility.',
+    techStack: ['HTML', 'Web3', 'Ethers', 'Javascript', 'CSS'],
+    github: null,
+    live: 'https://aya-stellar-v2.vercel.app/',
+  },
+  {
+    title: 'Baby Doge',
+    description: 'Baby Doge is a basic website that features a connection with the MetaMask wallet.',
+    techStack: ['React', 'Web3', 'Ethers', 'Next.js', 'Tailwind'],
+    github: null,
+    live: 'https://doge-pro.vercel.app/',
+  },
+  {
+    title: 'Taurus',
+    description: 'Stake & Unstake your token and earn rewards with Taurus.',
+    techStack: ['React', 'Web3', 'Ethers', 'Tailwind'],
+    github: null,
+    live: 'http://taurus2.vercel.app/',
+  },
+  {
+    title: 'Bear Pro',
+    description: 'Easy Metamask wallet link, mint tokens in seconds.',
+    techStack: ['React', 'Web3', 'Ethers', 'Next.js', 'Tailwind'],
+    github: 'https://github.com/atultrp/BearPro',
+    live: 'https://bearpro.vercel.app/',
+  },
+]
+
 
 export const WorkData = () => {
   const work = [

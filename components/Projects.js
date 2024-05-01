@@ -49,25 +49,26 @@ const Projects = () => {
   }
 
 
-  const ProjectCard = ({ index, title, description, techStack, github, live }) => {
+  const ProjectCard = ({ index, title, description, techStack, github, live, imgSrc }) => {
     return (
-      <div className='w-[280px] h-[250px] bg-[#182338hh] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-xl px-6 py-6 flex flex-col hover:scale-110 duration-300 ease-in-out' key={index}>
+      <div className='w-[280px] h-[350px] bg-[#182338hh] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-xl px-6 py-6 flex flex-col hover:scale-110 duration-300 ease-in-out' key={index}>
         <div className='flex justify-between mb-3'>
-          <FaFolder className='text-2xl' />
-          <div className='flex space-x-4'>
-            {github && <a href={github} target='_blank'>
-              <FiGithub className='text-xl hover:scale-125 duration-300 ease-in-out' />
-            </a>}
-            {live && <a href={live} target='_blank'>
-              <FaArrowUpRightFromSquare className='text-xl hover:scale-125 duration-300 ease-in-out' />
-            </a>}
-          </div>
+          {/* <FaFolder className='text-2xl' /> */}
+          <img src={imgSrc} className='rounded-md mx-3 object-cover object-center max-h-28 bg-cover w-full' alt="" />
         </div>
-        <div className='text-center mb-4'>
+        <div className='text-center mb-2'>
           <h3 className='text-lg sm:text-xl font-bold text-gray-200 mt-2'>{title}</h3>
           <p className='text-gray-400 mt-2 text-xs'>{description}</p>
         </div>
-        <div className='flex justify-center flex-wrap'>
+        <div className='flex space-x-4 justify-center'>
+          {github && <a href={github} target='_blank'>
+            <FiGithub className='text-xl hover:scale-125 duration-300 ease-in-out' />
+          </a>}
+          {live && <a href={live} target='_blank'>
+            <FaArrowUpRightFromSquare className='text-xl hover:scale-125 duration-300 ease-in-out' />
+          </a>}
+        </div>
+        <div className='flex justify-center flex-wrap mt-2'>
           {techStack?.map((item, index) => {
             return (
               <span key={index} className='text-xs mt-2 text-gray-400 bg-[#1a263d] px-2 py-1 rounded-md mr-2 h-fit flex-wrap flex'>{item}</span>
@@ -99,6 +100,7 @@ const Projects = () => {
                   techStack={project?.techStack}
                   github={project?.github}
                   live={project?.live}
+                  imgSrc={project?.imgSrc}
                 />
               </Fade>
             </div>
@@ -132,6 +134,7 @@ const Projects = () => {
                   techStack={project?.techStack}
                   github={project?.github}
                   live={project?.live}
+                  imgSrc={project?.imgSrc}
                 />
               </Fade>
             </div>

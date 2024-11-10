@@ -326,6 +326,14 @@ export const FreelanceProjectData = [
     live: 'https://futuristic-coin.vercel.app/',
   },
   {
+    title: 'Elysium',
+    description: 'A platform for purchasing Elysium tokens with BNB and USDT.',
+    techStack: ['React', 'Web3', 'Ethers', 'Next.js', 'Tailwind'],
+    github: null,
+    imgSrc: "/project/elysium.png",
+    live: 'https://elysium-app.vercel.app/',
+  },
+  {
     title: 'Future Farming',
     description: 'Future Farming is a simple user interface website.',
     techStack: ['React', 'Next.js', 'Tailwind'],

@@ -202,6 +202,14 @@ export const ProjectData = () => {
       live: 'https://short-bio.vercel.app/',
     },
     {
+      title: 'Track Daily',
+      description: "A simple, intuitive tool to help you track and build positive daily habits.",
+      imgSrc: "/project/trackDaily.jpeg",
+      techStack: ['React', 'Next.js v15', 'Firebase', 'Tailwind'],
+      github: null,
+      live: 'https://track-daily.vercel.app/',
+    },
+    {
       title: 'World Ranking App',
       description: 'Rank countries by population, name, area with detailed info and theme functionality.',
       techStack: ['Next.js', 'Tailwind', 'API'],

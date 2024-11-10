@@ -54,7 +54,7 @@ const Projects = () => {
       <div className='w-[280px] h-[350px] bg-[#182338hh] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-xl px-6 py-6 flex flex-col hover:scale-110 duration-300 ease-in-out' key={index}>
         <div className='flex justify-between mb-3'>
           {/* <FaFolder className='text-2xl' /> */}
-          <img src={imgSrc} className='rounded-md mx-3 object-cover object-center max-h-28 bg-cover w-full' alt="" />
+          <img src={imgSrc} className='border-[0.5px] border-gray-500 rounded-md mx-3 object-cover object-center max-h-28 bg-cover w-full' alt="" />
         </div>
         <div className='text-center mb-2'>
           <h3 className='text-lg sm:text-xl font-bold text-gray-200 mt-2'>{title}</h3>

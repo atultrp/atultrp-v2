@@ -68,13 +68,13 @@ const About = () => {
         </div>
         <div className="sm:mx-auto my-5 sm:w-2/5 ">
           <div className='flex items-center'>
-            <img src="/Images/atul-3.jpeg" alt="profile" className="w-56 rounded-lg border-8 border-gray-100 sm:mx-auto" />
+            <img src="/Images/atultrp_photo.jpg" alt="profile" className="w-60 md:w-72 rounded-3xl border-8 border-gray-100 sm:mx-auto" />
             <div className="ml-6 space-x-6 text-2xl my-3 sm:hidden">
               <SocialLinks />
             </div>
           </div>
-          <p className="text-2xl sm:text-3xl sm:text-center font-medium custom-font mt-2">Atul Tripathi</p>
-          <div className='w-fit mt-2 flex space-x-3 sm:mx-auto sm:mb-4'>
+          <p className="text-2xl sm:text-3xl sm:text-center font-medium custom-font my-4">Atul Tripathi</p>
+          <div className='w-fit flex space-x-3 sm:mx-auto sm:mb-4'>
             <a href="/Atul Tripathi Updated Resume.pdf" target="_blank">
               <button className='px-3 py-2 bg-white text-[#0F1624] font-bold rounded-md flex items-center space-x-1 duration-300 ease-in-out hover:scale-110'>
                 <HiDocumentText className='text-xl' />

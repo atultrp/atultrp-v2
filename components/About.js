@@ -75,7 +75,7 @@ const About = () => {
           </div>
           <p className="text-2xl sm:text-3xl sm:text-center font-medium custom-font my-4">Atul Tripathi</p>
           <div className='w-fit flex space-x-3 sm:mx-auto sm:mb-4'>
-            <a href="/Atul Tripathi Updated Resume.pdf" target="_blank">
+            <a href="/Atul Tripathi - Resume 2025 (updated).pdf" target="_blank">
               <button className='px-3 py-2 bg-white text-[#0F1624] font-bold rounded-md flex items-center space-x-1 duration-300 ease-in-out hover:scale-110'>
                 <HiDocumentText className='text-xl' />
                 <span>Resume</span>

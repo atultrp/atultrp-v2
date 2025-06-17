@@ -68,7 +68,7 @@ const About = () => {
         </div>
         <div className="sm:mx-auto my-5 sm:w-2/5 ">
           <div className='flex items-center'>
-            <img src="/Images/atultrp_photo.jpg" alt="profile" className="w-60 md:w-72 rounded-3xl border-8 border-gray-100 sm:mx-auto" />
+            <img src="/Images/AtulTripathi.jpeg" alt="profile" className="w-60 md:w-72 rounded-3xl border-8 border-gray-100 sm:mx-auto" />
             <div className="ml-6 space-x-6 text-2xl my-3 sm:hidden">
               <SocialLinks />
             </div>

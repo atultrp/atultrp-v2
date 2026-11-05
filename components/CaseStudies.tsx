@@ -13,7 +13,7 @@ export default function CaseStudies() {
         {caseStudies.map((c, i) => (
           <li key={c.slug} className={i === 0 ? 'md:col-span-2' : ''}>
             <Link href={`/work/${c.slug}`} className="card group block overflow-hidden transition-colors hover:border-white/20">
-              <ProjectImage aspect={i === 0 ? 'aspect-[16/10] md:aspect-[21/9]' : undefined} src={c.image} alt={c.imageAlt} title={c.title} sizes={i === 0 ? '(min-width: 1024px) 56rem, 100vw' : '(min-width: 768px) 28rem, 100vw'} />
+              <ProjectImage aspect={i === 0 ? 'aspect-[16/10] md:aspect-[21/9]' : undefined} position={c.imagePosition} src={c.image} alt={c.imageAlt} title={c.title} sizes={i === 0 ? '(min-width: 1024px) 56rem, 100vw' : '(min-width: 768px) 28rem, 100vw'} />
               <div className="p-5 sm:p-6">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <p className="eyebrow">

@@ -8,6 +8,7 @@ export default function ProjectImage({
   sizes,
   priority = false,
   aspect = 'aspect-[16/10]',
+  position = 'top',
 }: {
   src: string
   alt: string
@@ -15,6 +16,7 @@ export default function ProjectImage({
   sizes: string
   priority?: boolean
   aspect?: string
+  position?: 'top' | 'center'
 }) {
   const [failed, setFailed] = useState(false)
 
@@ -32,7 +34,7 @@ export default function ProjectImage({
           sizes={sizes}
           priority={priority}
           onError={() => setFailed(true)}
-          className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+          className={`object-cover ${position === 'center' ? 'object-center' : 'object-top'} transition-transform duration-500 group-hover:scale-[1.03]`}
         />
       )}
     </div>

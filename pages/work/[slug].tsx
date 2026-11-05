@@ -61,7 +61,7 @@ export default function CaseStudyPage({ study, next }: Props) {
       </header>
 
       <div className="card mt-10 overflow-hidden">
-        <ProjectImage aspect="aspect-[16/10] md:aspect-[2/1]" src={study.image} alt={study.imageAlt} title={study.title} sizes="(min-width: 1152px) 72rem, 100vw" priority />
+        <ProjectImage aspect="aspect-[16/10] md:aspect-[2/1]" position={study.imagePosition} src={study.image} alt={study.imageAlt} title={study.title} sizes="(min-width: 1152px) 72rem, 100vw" priority />
       </div>
 
       <dl className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">

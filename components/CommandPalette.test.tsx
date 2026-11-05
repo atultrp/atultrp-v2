@@ -49,7 +49,7 @@ describe('CommandPalette', () => {
     fireEvent.click(screen.getByText('open'))
 
     const input = screen.getByRole('combobox')
-    fireEvent.change(input, { target: { value: 'world' } })
+    fireEvent.change(input, { target: { value: 'fastrag' } })
 
     const options = screen.getAllByRole('option')
     expect(options).toHaveLength(1)
@@ -57,7 +57,7 @@ describe('CommandPalette', () => {
     expect(input.getAttribute('aria-activedescendant')).toBe(options[0]?.id)
 
     fireEvent.keyDown(input, { key: 'Enter' })
-    expect(push).toHaveBeenCalledWith('/work/world-rank')
+    expect(push).toHaveBeenCalledWith('/work/fastrag')
     expect(screen.queryByRole('dialog')).toBeNull()
   })
 

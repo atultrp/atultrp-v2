@@ -26,7 +26,7 @@ export default function SiteHeader() {
   return (
     <header
       className={`sticky top-0 z-40 transition-colors duration-300 ${
-        scrolled ? 'border-b border-line bg-ink/80 backdrop-blur-md' : 'border-b border-transparent'
+        scrolled ? 'border-b border-line bg-ink/95 backdrop-blur-md' : 'border-b border-transparent'
       }`}
     >
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-50 focus:rounded-md focus:bg-signal focus:px-3 focus:py-2 focus:text-signal-ink">

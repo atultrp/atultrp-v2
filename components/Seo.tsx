@@ -20,7 +20,7 @@ export default function Seo({ title, description = DEFAULT_DESCRIPTION }: { titl
     email: `mailto:${profile.email}`,
     address: { '@type': 'PostalAddress', addressLocality: 'Bangalore', addressCountry: 'IN' },
     sameAs: socials.map((s) => s.href),
-    knowsAbout: ['React', 'TypeScript', 'Next.js', 'Frontend architecture', 'Web accessibility', 'Web performance'],
+    knowsAbout: ['React', 'TypeScript', 'Next.js', 'Frontend architecture', 'Web accessibility', 'Web performance', 'Retrieval-augmented generation', 'LLM applications'],
   }
 
   return (

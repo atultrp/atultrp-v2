@@ -107,7 +107,9 @@ export const experience: Role[] = [
 export type StackGroup = { label: string; items: string[] }
 
 export const stack: StackGroup[] = [
-  { label: 'Core', items: ['TypeScript', 'JavaScript', 'React', 'Next.js', 'Redux', 'Tailwind CSS'] },
-  { label: 'Backend & data', items: ['Node.js', 'Express', 'MongoDB'] },
-  { label: 'Workflow', items: ['Git', 'Figma', 'Vercel'] },
+  { label: 'Core', items: ['TypeScript', 'JavaScript', 'React', 'Next.js', 'Redux', 'Tailwind CSS', 'Framer Motion'] },
+  { label: 'AI & LLM', items: ['Claude API', 'RAG pipelines', 'LangChain.js', 'Voyage AI embeddings', 'Pinecone', 'SSE streaming'] },
+  { label: 'Backend & data', items: ['Node.js', 'Express', 'MongoDB', 'Firebase'] },
+  { label: 'Testing', items: ['Vitest', 'React Testing Library'] },
+  { label: 'Workflow', items: ['Git', 'GitHub Actions', 'Figma', 'Vercel'] },
 ]

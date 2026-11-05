@@ -61,14 +61,14 @@ export const experience: Role[] = [
     period: 'Apr 2025 — Present',
     location: 'Bangalore · Insurtech',
     highlights: [
-      'Built a reusable design system with 20+ components, which removed UI inconsistencies and sped up feature delivery across products.',
+      'Built a reusable design system with 20+ components, which removed UI inconsistencies and sped up delivery.',
       'Set code review standards and frontend best practices, which cut bugs by 40%.',
-      'Led frontend architecture decisions across multiple React projects to keep the codebase scalable and maintainable.',
-      'Mentored junior developers and defined technical requirements with backend and product teams, so features shipped with minimal rework.',
+      'Led frontend architecture decisions across multiple React projects for scalability and maintainability.',
+      'Mentored junior developers and set requirements with backend and product, so features shipped with minimal rework.',
     ],
   },
   {
-    title: 'Software Engineer, Frontend',
+    title: 'Software Engineer, Frontend (promoted)',
     company: 'Riskcovry',
     companyUrl: 'https://riskcovry.com/',
     period: 'Jul 2022 — Apr 2025',
@@ -76,7 +76,7 @@ export const experience: Role[] = [
     highlights: [
       'Built 15+ reusable React components, which cut development time by 30%.',
       'Integrated REST APIs into 5+ frontend applications with consistent data handling.',
-      'Introduced Redux state management, which improved application stability and maintainability by 25%.',
+      'Introduced Redux state management, which improved stability and maintainability by 25%.',
       'Shipped with cross-functional teams of 5+ people and raised user satisfaction by 20%.',
     ],
   },
@@ -88,7 +88,7 @@ export const experience: Role[] = [
     location: 'Remote · Client work',
     highlights: [
       'Delivered 9 client frontends end to end, from scoping to production deploy on Vercel.',
-      'Built Web3 interfaces with MetaMask wallet connection, token staking, and token minting using ethers.js.',
+      'Built Web3 interfaces with MetaMask wallet connection, token staking, and minting using ethers.js.',
     ],
   },
   {
@@ -99,7 +99,6 @@ export const experience: Role[] = [
     location: 'Remote',
     highlights: [
       'Optimized frontend code, which improved load speed by 15%.',
-      'Built 10+ reusable UI components, which cut development time by 30%.',
     ],
   },
 ]

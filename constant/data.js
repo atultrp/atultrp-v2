@@ -8,6 +8,8 @@ export const navItems = () => {
   ]
 }
 
+export const resumePath = "/Atul_Tripathi_Resume.pdf"
+
 export const techStackData = () => {
   const techStack = {
     languages: [

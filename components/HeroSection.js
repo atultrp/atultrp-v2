@@ -3,6 +3,7 @@ import React from 'react'
 import { HiDocumentText } from 'react-icons/hi'
 import { BiCodeAlt } from 'react-icons/bi'
 import { scrollNavItemSmooth } from '@/shared/ShareFunction'
+import { resumePath } from "@/constant/data"
 
 const HeroSection = () => {
   return (
@@ -13,7 +14,7 @@ const HeroSection = () => {
         <h1 className='text-4xl sm:text-5xl font-bold text-white'>I LOVE TO LEARN & CREATE STUFF.</h1>
         <p className='text-base sm:text-[19px] text-gray-300 w-10/12 tracking-wide'>I'm a Fullstack web Developer. I love learning new things and challenging myself. Currently I'm focused on developing and maintaining awesome interfaces & experiences at {" "}<a href="https://riskcovry.com/" className="font-semibold underline">Riskcovry</a> for insurTech industry.</p>
         <div className='hidden sm:flex space-x-3'>
-          <a href="/Atul Tripathi - Resume 2025 - v2.1.pdf" target="_blank">
+          <a href={resumePath} target="_blank">
             <button className='px-3 py-2 bg-white text-[#0F1624] font-bold rounded-md flex items-center space-x-1 duration-300 ease-in-out hover:scale-110'>
               <HiDocumentText className='text-xl' />
               <span>Resume</span>

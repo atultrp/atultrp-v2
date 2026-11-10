@@ -61,7 +61,7 @@ export const experience: Role[] = [
     period: 'Apr 2025 — Present',
     location: 'Bangalore · Insurtech',
     highlights: [
-      'Built a reusable design system with 20+ components, which removed UI inconsistencies and sped up delivery.',
+      'Built a reusable design system with 20+ components, which removed UI inconsistencies across products.',
       'Set code review standards and frontend best practices, which cut bugs by 40%.',
       'Led frontend architecture decisions across multiple React projects for scalability and maintainability.',
       'Mentored junior developers and set requirements with backend and product, so features shipped with minimal rework.',
